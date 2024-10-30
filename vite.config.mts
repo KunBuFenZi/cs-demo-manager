@@ -29,7 +29,15 @@ export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: ['macros'],
+        plugins: [
+          ['macros'],
+          [
+            'babel-plugin-react-compiler',
+            {
+              target: '18',
+            },
+          ],
+        ],
       },
     }),
     lingui(),

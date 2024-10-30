@@ -7,6 +7,7 @@ import localRules from 'eslint-plugin-local-rules';
 import lingui from 'eslint-plugin-lingui';
 import tailwind from 'eslint-plugin-tailwindcss';
 import prettier from 'eslint-plugin-prettier/recommended';
+import reactCompiler from 'eslint-plugin-react-compiler';
 
 export default [
   {
@@ -61,6 +62,7 @@ export default [
       lingui,
       'local-rules': localRules,
       'react-hooks': reactHooks,
+      'react-compiler': reactCompiler,
     },
 
     languageOptions: {
